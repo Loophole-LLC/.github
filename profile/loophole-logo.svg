@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-labelledby="title desc">
+  <title id="title">Loophole, LLC</title>
+  <desc id="desc">Loophole, LLC wordmark with a castle tower and arrowslit mark.</desc>
+  <defs>
+    <linearGradient id="badgeGrad" x1="20" y1="28" x2="164" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#56d364"/>
+      <stop offset="1" stop-color="#2ea043"/>
+    </linearGradient>
+    <linearGradient id="slitGrad" x1="92" y1="55" x2="92" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#d4f7db"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="20" y="30" width="140" height="140" rx="36" fill="#3fb950" opacity="0.42" filter="url(#glow)"/>
+  <rect x="20" y="30" width="140" height="140" rx="36" fill="url(#badgeGrad)"/>
+
+  <!-- castle tower silhouette -->
+  <path d="M53,56 L53,42 L71,42 L71,56 L83,56 L83,42 L101,42 L101,56 L113,56 L113,42 L131,42 L131,56 L131,150 L53,150 Z"
+        fill="#0F0F14" opacity="0.94"/>
+
+  <!-- arrowslit hole through the tower -->
+  <path d="M92,66 C80,82 74,100 74,118 L81,118 L92,136 L103,118 L110,118 C110,100 104,82 92,66 Z" fill="url(#slitGrad)"/>
+  <path d="M92,70 C83,84 78,100 78,118 L106,118 C106,100 101,84 92,70 Z" fill="#2ea043" opacity="0.28"/>
+  <rect x="89" y="72" width="6" height="58" rx="3" fill="#FFFFFF"/>
+
+  <text x="190" y="115"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-weight="800" font-size="64" letter-spacing="0">
+    <tspan fill="#56d364">loop</tspan><tspan fill="#FFFFFF">hole</tspan>
+  </text>
+  <text x="194" y="146"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-weight="700" font-size="17" letter-spacing="2" fill="#B3B3B3">PROTECTED ACCESS SYSTEMS</text>
+</svg>
